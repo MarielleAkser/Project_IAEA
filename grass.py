@@ -82,6 +82,8 @@ ci_095_high = data[:,5]
 
 ###################################################################################
 # # # Plot:
+# plt.scatter(MASS_1, CPS_1)
+# plt.scatter(MASS_2, CPS_2)
 
 # Data for the different containers
 plt.scatter(burk_A180["Mass"], burk_A180["cps-"+ele], label="A180", marker=".")
@@ -100,9 +102,9 @@ plt.fill_between(np.sort(df["Mass"]), np.sort(ci_095_low), np.sort(ci_095_high),
 plt.legend()
 plt.ylim(0)
 plt.xlim(0)
-plt.title("Plot over the relationship between cps and the mass for "+ele)
+plt.title("Result of the measurements of K-40 for grass")
 plt.xlabel("Mass [g]")
-plt.ylabel("cps-" + ele)
+plt.ylabel("cps")
 plt.grid()
 plt.savefig("grass_all+trends_"+ele+".png")
 plt.show()
