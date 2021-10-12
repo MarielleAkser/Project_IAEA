@@ -1,6 +1,6 @@
 import numpy as np
 
-# Time that have past since [15th Nov. 2009, 1st June 2006]:
+# Time that have past since [15th Nov. 2009, 1st June 2006] = [moss-soil, grass]:
 t = [12, 15]
 
 # Half-life:
